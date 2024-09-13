@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "hancken";
+  src: url(../assets/fonts/HankenGrotesk.ttf);
+  font-weight: 500 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100svh;
+  font-family: "hancken", Arial, sans-serif;
+}
+
+.card_description {
+  background: linear-gradient(hsl(256, 72%, 46%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  padding-inline: 3rem;
+}
+.card_description .cercle {
+  height: 95px;
+  width: 95px;
+  background: linear-gradient(rgba(5, 5, 183, 0.802), hsla(241, 72%, 46%, 0), hsl(241, 81%, 54%));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_description .cercle .wrapp {
+  display: flex;
+  flex-direction: column;
+  margin-block: -1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.card_description .cercle .wrapp span {
+  font-size: 13px;
+  color: hsl(252, 100%, 67%);
+}
+.card_description h3.title {
+  color: hsl(252, 100%, 67%);
+  margin-block-end: 1rem;
+}
+.card_description h1 {
+  color: #fff;
+  margin-block-start: 2rem;
+  margin-block-end: 1rem;
+  font-weight: 500;
+}
+.card_description p {
+  color: #fff;
+  text-align: center;
+  margin-block-end: 2rem;
+}
+.card_statistic {
+  margin-block-start: 1rem;
+}
+.card h3 {
+  margin-block: 2rem;
+  color: hsl(234, 85%, 45%);
+  padding-inline-start: 2rem;
+}
+.card_number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline-end: 2rem;
+  padding-inline-start: 2.4rem;
+  margin-block-start: 4rem;
+}
+.card_number .align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+.card_number .one {
+  color: hsl(0, 100%, 67%);
+}
+.card_number .two {
+  color: hsl(39, 100%, 56%);
+}
+.card_number .tree {
+  color: hsl(166, 100%, 37%);
+}
+.card_number .four {
+  color: hsl(234, 85%, 45%);
+}
+.card_number .disabel {
+  color: grey;
+}
+.card_button {
+  margin-block-start: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(21, 19, 73);
+  margin-inline: 2.5rem;
+  padding: 0.8rem;
+  border-radius: 25px;
+  padding-inline-start: 0px;
+}
+.card_button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 700px;
+    height: 450px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 47px;
+  }
+  .card_description {
+    width: 50%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .card_statistic {
+    margin-block-start: 0;
+  }
+  .card_number {
+    flex-direction: row;
+    gap: 0 8rem;
+    margin-block-start: 2.75rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

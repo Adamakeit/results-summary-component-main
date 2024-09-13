@@ -1,0 +1,138 @@
+.card {
+  &_description {
+    background: linear-gradient($Violet, $Lightroyablue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    padding-inline: 3rem;
+    .cercle {
+      height: 95px;
+      width: 95px;
+      background: linear-gradient(
+        rgba(5, 5, 183, 0.802),
+        $Persianblue,
+        $Lightroyablue
+      );
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .wrapp {
+        display: flex;
+        flex-direction: column;
+        margin-block: -1rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.6rem;
+        font-weight: 700;
+        span {
+          font-size: 13px;
+          color: $Lightslateblue;
+        }
+      }
+    }
+    h3.title {
+      color: $Lightslateblue;
+      margin-block-end: 1rem;
+    }
+    h1 {
+      color: #fff;
+      margin-block-start: 2rem;
+      margin-block-end: 1rem;
+      font-weight: 500;
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      margin-block-end: 2rem;
+    }
+  }
+  &_statistic {
+    margin-block-start: 1rem;
+  }
+  h3 {
+    margin-block: 2rem;
+    color: $Cobalt-blue;
+    padding-inline-start: 2rem;
+  }
+  &_number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-end: 2rem;
+    padding-inline-start: 2.4rem;
+    margin-block-start: 4rem;
+    .align {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .one {
+      color: $Light-red;
+    }
+    .two {
+      color: $Orangey-yellow;
+    }
+    .tree {
+      color: $Green-teal;
+    }
+    .four {
+      color: $Cobalt-blue;
+    }
+    .disabel {
+      color: grey;
+    }
+  }
+  &_button {
+    margin-block-start: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 19, 73);
+    margin-inline: 2.5rem;
+    padding: 0.8rem;
+    border-radius: 25px;
+    padding-inline-start: 0px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 700px;
+    height: 450px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 47px;
+    &_description {
+      width: 50%;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+    &_statistic {
+      margin-block-start: 0;
+    }
+    &_number {
+      flex-direction: row;
+      gap: 0 8rem;
+      margin-block-start: 2.75rem;
+    }
+  }
+}

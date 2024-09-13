@@ -1,0 +1,24 @@
+$Light-red: hsl(0, 100%, 67%);
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$Cobalt-blue: hsl(234, 85%, 45%);
+// gradient
+$Lightslateblue: hsl(252, 100%, 67%);
+$Lightroyablue: hsl(241, 81%, 54%);
+$Violet: hsla(256, 72%, 46%, 1);
+$Persianblue: hsla(241, 72%, 46%, 0);
+
+@font-face {
+  font-family: "hancken";
+  src: url(../assets/fonts/HankenGrotesk.ttf);
+  font-weight: 500 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100svh;
+  font-family: "hancken", Arial, sans-serif;
+}
